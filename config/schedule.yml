@@ -1,0 +1,8 @@
+import_csv:
+  cron: "*/2 * * * *"
+  class: "ImportCsvWorker"
+  queue: default
+update_age:
+  cron: "*/5 * * * *"
+  class: "UpdateAgeWorker"
+  queue: critical
